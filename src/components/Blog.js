@@ -20,9 +20,7 @@ function Blog() {
   useComponentWillMount(() => {
     const client = createClient({
       space: process.env.REACT_APP_SPACE_ID,
-      accessToken: process.env.REACT_APP_ACCESS_TOKEN,
-      host: 'localhost:6789',
-      basePath: '/api/contentful'
+      accessToken: process.env.REACT_APP_ACCESS_TOKEN
     });
 
     client

@@ -86,7 +86,7 @@ function HomePage() {
               <small>Loading...</small>
             ) : (
               data.tools.slice(-6).reverse().map((tool) => (              
-                <ToolTile name={tool.name} link={tool.link} image={tool.image} shortDescription={tool.shortDescription} />   
+                <ToolTile name={tool.name} link={tool.link} image={tool.image} />   
               ))
             )}
             </ul>
