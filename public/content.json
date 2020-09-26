@@ -1,0 +1,695 @@
+{
+    "categories": ["Business", "Productivity", "Marketing", "Design", "Code", "Media resources", "Ecommerce", "Research", "Writing", "Communication", "Automation", "File manipulation", "Website tools", "Education"],
+    "tools": [
+        {
+            "id": "toggl",
+            "name": "Toggl",
+            "shortDescription": "Simple time tracking. Powerful reporting.",
+            "image": "/images/logos/toggl.png",
+            "link": "https://toggl.com",
+            "category": [
+                "Productivity"
+            ]
+        },
+        {
+            "id": "monday",
+            "name": "Monday",
+            "shortDescription": "Team management platform to manage any work and any team.",
+            "image": "/images/logos/monday.png",
+            "link": "https://monday.com",
+            "category": [
+                "Productivity"
+            ]
+        },
+        {
+            "id": "trello",
+            "name": "Trello",
+            "shortDescription": "Boards, lists and cards to organize and prioritize your projects.",
+            "image": "/images/logos/trello.png",
+            "link": "https://trello.com",
+            "category": [
+                "Productivity"
+            ]
+        },
+        {
+            "id": "asana",
+            "name": "Asana",
+            "shortDescription": "Work management platform teams use to  stay focused.",
+            "image": "/images/logos/asana.png",
+            "link": "https://asana.com",
+            "category": [
+                "Productivity"
+            ]
+        },
+        {
+            "id": "andco",
+            "name": "And.co",
+            "shortDescription": "Send proposals, invoice, get paid and manage your time and tasks.",
+            "image": "/images/logos/andco.png",
+            "link": "https://and.co",
+            "category": [
+                "Productivity", "Business"
+            ]
+        },
+        {
+            "id": "confetti",
+            "name": "Confetti",
+            "shortDescription": "A platform for celebrating daily progress towards your goals.",
+            "image": "/images/logos/confetti.ico",
+            "link": "https://tryconfetti.io",
+            "category": [
+                "Productivity"
+            ]
+        },
+        {
+            "id": "mailchimp",
+            "name": "Mailchimp",
+            "shortDescription": "Mailchimp makes it easy to send campaigns to the right people at the right time.",
+            "image": "/images/logos/mailchimp.ico",
+            "link": "https://mailchimp.com",
+            "category": [
+                "Marketing"
+            ]
+        },
+        {
+            "id": "klaviyo",
+            "name": "Klaviyo",
+            "shortDescription": "Klaviyo is the growth marketing platform built for online businesses.",
+            "image": "/images/logos/klaviyo.png",
+            "link": "https://klaviyo.com",
+            "category": [
+                "Marketing"
+            ]
+        },
+        {
+            "id": "searchvolume",
+            "name": "Search Volume",
+            "shortDescription": "Free keyword search volume tool.",
+            "link": "https://searchvolume.io",
+            "category": [
+                "Marketing"
+            ]
+        },
+        {
+            "id": "ahrefs",
+            "name": "aHrefs",
+            "shortDescription": "Tools to grow your search traffic, research your competitors and monitor your niche.",
+            "image": "/images/logos/ahrefs.ico",
+            "link": "https://ahrefs.com",
+            "category": [
+                "Marketing"
+            ]
+        },
+        {
+            "id": "moz",
+            "name": "Moz",
+            "shortDescription": "SEO software and data to help you increase traffic, rankings, and visibility in search results.",
+            "image": "/images/logos/moz.ico",
+            "link": "https://moz.com",
+            "category": [
+                "Marketing"
+            ]
+        },
+        {
+            "id": "keywordtool",
+            "name": "Keyword Tool",
+            "shortDescription": "Find great keywords using Google autocomplete.",
+            "image": "/images/logos/keywordtool.ico",
+            "link": "https://keywordtool.io",
+            "category": [
+                "Marketing"
+            ]
+        },
+        {
+            "id": "answerthepublic",
+            "name": "Answer the Public",
+            "shortDescription": "Find out what questions and queries your consumers have by getting a free report of what they're searching for in Google.",
+            "image": "/images/logos/answerthepublic.png",
+            "link": "https://answerthepublic.com",
+            "category": [
+                "Marketing"
+            ]
+        },
+        {
+            "id": "instapage",
+            "name": "Instapage",
+            "shortDescription": "Get more from your digital ad spend with personalized post-click landing page experiences.",
+            "image": "/images/logos/instapage.png",
+            "link": "https://instapage.com",
+            "category": [
+                "Marketing"
+            ]
+        },
+        {
+            "id": "vyper",
+            "name": "Vyper",
+            "shortDescription": "Grow your brand with giveaways & contests.",
+            "image": "/images/logos/vyper.png",
+            "link": "https://vyper.io",
+            "category": [
+                "Marketing"
+            ]
+        },
+        {
+            "id": "lander",
+            "name": "Lander",
+            "shortDescription": "Create free landing pages.",
+            "image": "/images/logos/lander.ico",
+            "link": "https://landerapp.com",
+            "category": [
+                "Marketing"
+            ]
+        },
+        {
+            "id": "unbounce",
+            "name": "Unbounce",
+            "shortDescription": "Create custom landing pages that convert more visitors than any website—no coding required.",
+            "image": "/images/logos/unbounce.ico",
+            "link": "https://unbounce.com",
+            "category": [
+                "Marketing"
+            ]
+        },
+        {
+            "id": "pluralsight",
+            "name": "Pluralsight",
+            "shortDescription": "The technology skills platform.",
+            "image": "/images/logos/pluralsight.png",
+            "link": "https://pluralsight.com",
+            "category": [
+                "Education"
+            ]
+        },
+        {
+            "id": "udemy",
+            "name": "Udemy",
+            "shortDescription": "The world’s largest selection of courses.",
+            "image": "/images/logos/udemy.png",
+            "link": "https://udemy.com",
+            "category": [
+                "Education"
+            ]
+        },
+        {
+            "id": "codecademy",
+            "name": "Codecademy",
+            "shortDescription": "Online interactive platform for taking coding classes.",
+            "image": "/images/logos/codecademy.png",
+            "link": "https://codecademy.com",
+            "category": [
+                "Education"
+            ]
+        },
+        {
+            "id": "grammarly",
+            "name": "Grammarly",
+            "shortDescription": "Writing assistant to help eliminate writing errors and find the perfect words.",
+            "image": "/images/logos/grammarly.png",
+            "link": "https://grammarly.com",
+            "category": [
+                "Writing"
+            ]
+        },
+        {
+            "id": "figma",
+            "name": "Figma",
+            "shortDescription": "Graphic design tool to create, test, and ship better designs from start to finish.",
+            "image": "/images/logos/figma.svg",
+            "link": "https://figma.com",
+            "category": [
+                "Design"
+            ]
+        },
+        {
+            "id": "invision",
+            "name": "Invision",
+            "shortDescription": "The digital product design platform powering the world’s best user experiences.",
+            "image": "/images/logos/invision.png",
+            "link": "https://invisionapp.com",
+            "category": [
+                "Design"
+            ]
+        },
+        {
+            "id": "canva",
+            "name": "Canva",
+            "shortDescription": "Use Canva’s drag-and-drop feature and professional layouts to design consistently stunning graphics.",
+            "image": "/images/logos/canva.png",
+            "link": "https://canva.com",
+            "category": [
+                "Design"
+            ]
+        },
+        {
+            "id": "icons8photocreator",
+            "name": "Icons8 Photo Creator",
+            "shortDescription": "A tool for creating bespoke stock photos using a library of cut out images.",
+            "image": "/images/logos/icons8.png",
+            "link": "https://photos.icons8.com/creator",
+            "category": [
+                "Design"
+            ]
+        },
+        {
+            "id": "draftium",
+            "name": "Draftium",
+            "shortDescription": "Turbo prototyping tool for websites.",
+            "image": "/images/logos/draftium.png",
+            "link": "https://draftium.com/",
+            "category": [
+                "Design"
+            ]
+        },
+        {
+            "id": "draftbit",
+            "name": "Draftbit",
+            "shortDescription": "Visually build native mobile apps—all from your browser.",
+            "image": "/images/logos/draftbit.png",
+            "link": "https://draftbit.com/",
+            "category": [
+                "Design"
+            ]
+        },
+        {
+            "id": "unsplash",
+            "name": "Unsplash",
+            "shortDescription": "The internet’s source of freely usable images. Powered by creators everywhere.",
+            "image": "/images/logos/unsplash.png",
+            "link": "https://unsplash.com",
+            "category": [
+                "Media resources", "Photos"
+            ]
+        },
+        {
+            "id": "burst",
+            "name": "Burst",
+            "shortDescription": "Free, high-resolution images for websites and commercial use.",
+            "image": "/images/logos/burst.png",
+            "link": "https://burst.shopify.com/",
+            "category": [
+                "Media resources", "Photos"
+            ]
+        },
+        {
+            "id": "rawpixel",
+            "name": "RawPixel",
+            "shortDescription": "Authentic design resources for everyone.",
+            "image": "/images/logos/rawpixel.ico",
+            "link": "https://www.rawpixel.com/",
+            "category": [
+                "Media resources", "Photos"
+            ]
+        },
+        {
+            "id": "canvaphotos",
+            "name": "Canva Photos",
+            "shortDescription": "Millions of high-quality free and premium photos to create beautiful designs.",
+            "image": "/images/logos/canva.png",
+            "link": "https://www.canva.com/photos/",
+            "category": [
+                "Media resources", "Photos"
+            ]
+        },
+        {
+            "id": "icons8moose",
+            "name": "Icons8 Moose",
+            "shortDescription": "A library of realistic photo collages and photos to create them.",
+            "image": "/images/logos/icons8.png",
+            "link": "https://photos.icons8.com/",
+            "category": [
+                "Media resources", "Photos"
+            ]
+        },
+        {
+            "id": "icons8ouch",
+            "name": "Icons8 Ouch",
+            "shortDescription": "Free vector illustrations to class up your project.",
+            "image": "/images/logos/icons8.png",
+            "link": "https://icons8.com/ouch",
+            "category": [
+                "Media resources", "Illustrations"
+            ]
+        },
+        {
+            "id": "icons8vendorcreator",
+            "name": "Icons8 Vector Creator",
+            "shortDescription": "Create engaging custom illustrations. No design team required.",
+            "image": "/images/logos/icons8.png",
+            "link": "https://icons8.com/vector-creator",
+            "category": [
+                "Media resources", "Illustrations"
+            ]
+        },
+        {
+            "id": "itg",
+            "name": "ITG",
+            "shortDescription": "Infinite combinations of illustrations.",
+            "image": "/images/logos/itg.ico",
+            "link": "https://itg.digital/",
+            "category": [
+                "Media resources", "Illustrations"
+            ]
+        },
+        {
+            "id": "undraw",
+            "name": "Undraw",
+            "shortDescription": "Open-source illustrations for any idea you can imagine and create.",
+            "image": "/images/logos/undraw.png",
+            "link": "https://undraw.co/illustrations",
+            "category": [
+                "Media resources", "Illustrations"
+            ]
+        },
+        {
+            "id": "manypixels",
+            "name": "ManyPixels",
+            "shortDescription": "ManyPixels gives you a professional designer to help you with all of your creative needs.",
+            "image": "/images/logos/manypixels.png",
+            "link": "https://www.manypixels.co/",
+            "category": [
+                "Media resources", "Illustrations"
+            ]
+        },
+        {
+            "id": "growwwkit",
+            "name": "Growww Kit",
+            "shortDescription": "Illustration resources for designers, agencies, studios, blogs, startups, entrepreneurs.",
+            "image": "/images/logos/growwwkit.png",
+            "link": "https://growwwkit.com",
+            "category": [
+                "Media resources", "Illustrations"
+            ]
+        },
+        {
+            "id": "collletttivo",
+            "name": "Collletttivo",
+            "shortDescription": "Collletttivo designs and distributes free Open-Source typefaces.",
+            "image": "/images/logos/collletttivo.png",
+            "link": "http://collletttivo.it/",
+            "category": [
+                "Media resources", "Fonts"
+            ]
+        },
+        {
+            "id": "fontsquirrel",
+            "name": "FontSquirrel",
+            "shortDescription": "A library of free for commercial use fonts.",
+            "image": "/images/logos/fontsquirrel.png",
+            "link": "https://www.fontsquirrel.com/",
+            "category": [
+                "Media resources", "Fonts"
+            ]
+        },
+        {
+            "id": "pexels",
+            "name": "Pexels",
+            "shortDescription": "The best free stock videos shared by the Pexels community.",
+            "image": "/images/logos/pexels.png",
+            "link": "https://www.pexels.com/videos/",
+            "category": [
+                "Media resources", "Videos"
+            ]
+        },
+        {
+            "id": "pixabay",
+            "name": "Pixabay",
+            "shortDescription": "Stunning free stock video footage & clips.",
+            "image": "/images/logos/pixabay.png",
+            "link": "https://pixabay.com/videos/",
+            "category": [
+                "Media resources", "Videos"
+            ]
+        },
+        {
+            "id": "videohive",
+            "name": "Videohive",
+            "shortDescription": "The best free stock videos shared by the Pexels community.",
+            "image": "/images/logos/videohive.png",
+            "link": "https://videohive.net/",
+            "category": [
+                "Media resources", "Videos"
+            ]
+        },
+        {
+            "id": "fontawesome",
+            "name": "FontAwesome",
+            "shortDescription": "Get vector icons and social logos on your website with Font Awesome, the web's most popular icon set and toolkit.",
+            "image": "/images/logos/fontawesome.png",
+            "link": "https://fontawesome.com/",
+            "category": [
+                "Media resources", "Icons"
+            ]
+        },
+        {
+            "id": "iconfinder",
+            "name": "IconFinder",
+            "shortDescription": "Access world-famous icon families and undiscovered gems.",
+            "image": "/images/logos/iconfinder.png",
+            "link": "https://www.iconfinder.com/",
+            "category": [
+                "Media resources", "Icons"
+            ]
+        },
+        {
+            "id": "shopify",
+            "name": "Shopify",
+            "shortDescription": "One platform with all the ecommerce and point of sale features you need to start, run, and grow your business.",
+            "image": "/images/logos/shopify.png",
+            "link": "https://www.shopify.com/",
+            "category": [
+                "Ecommerce"
+            ]
+        },
+        {
+            "id": "squarespace",
+            "name": "SquareSpace",
+            "shortDescription": "Squarespace is the all‑in‑one platform to build a beautiful website.",
+            "image": "/images/logos/squarespace.png",
+            "link": "https://www.squarespace.com/",
+            "category": [
+                "Ecommerce"
+            ]
+        },
+        {
+            "id": "clickfunnels",
+            "name": "Click Funnels",
+            "image": "/images/logos/clickfunnels.ico",
+            "shortDescription": "Quickly create beautiful sales funnels that convert your visitors into leads and then customers.",
+            "link": "https://www.clickfunnels.com/",
+            "category": [
+                "Ecommerce"
+            ]
+        },
+        {
+            "id": "helium10",
+            "name": "Helium10",
+            "shortDescription": "Insanely powerful software tools for Amazon sellers.",
+            "image": "/images/logos/helium10.png",
+            "link": "https://www.helium10.com/",
+            "category": [
+                "Ecommerce"
+            ]
+        },
+        {
+            "id": "webflowecommerce",
+            "name": "Webflow Ecommerce",
+            "shortDescription": "Design, sell, and scale your online business with Webflow Ecommerce, the first ecommerce platform that gives you control over everything.",
+            "image": "/images/logos/webflow.png",
+            "link": "https://webflow.com/ecommerce",
+            "category": [
+                "Ecommerce"
+            ]
+        },
+        {
+            "id": "wix",
+            "name": "Wix",
+            "shortDescription": "Platform that gives you the freedom to create, design, manage and develop your web presence exactly the way you want.",
+            "image": "/images/logos/wix.ico",
+            "link": "https://www.wix.com/",
+            "category": [
+                "Website tools", "Builders"
+            ]
+        },
+        {
+            "id": "webflow",
+            "name": "Webflow",
+            "shortDescription": "Build better business websites, faster. Without coding.",
+            "image": "/images/logos/webflow.png",
+            "link": "https://webflow.com/",
+            "category": [
+                "Website tools", "Builders"
+            ]
+        },
+        {
+            "id": "hotjar",
+            "name": "HotJar",
+            "shortDescription": "The fast & visual way to understand your users.",
+            "image": "/images/logos/hotjar.png",
+            "link": "https://www.hotjar.com/",
+            "category": [
+                "Website tools", "Testing"
+            ]
+        },
+        {
+            "id": "namelix",
+            "name": "Namelix",
+            "shortDescription": "Business name generator.",
+            "image": "/images/logos/namelix.png",
+            "link": "https://namelix.com/",
+            "category": [
+                "Business"
+            ]
+        },
+        {
+            "id": "seedlegals",
+            "name": "SeedLegals",
+            "shortDescription": "The legals for growing your company. Sorted.",
+            "image": "/images/logos/seedlegals.ico",
+            "link": "https://seedlegals.com/",
+            "category": [
+                "Business"
+            ]
+        },
+        {
+            "id": "unless",
+            "name": "Unless",
+            "shortDescription": "Personalization for businesses. Turn your website into your most effective sales channel.",
+            "image": "/images/logos/unless.ico",
+            "link": "https://unless.com/",
+            "category": [
+                "Business"
+            ]
+        },
+        {
+            "id": "github",
+            "name": "Github",
+            "shortDescription": "Development platform where you can host and review code, manage projects, and build software alongside 40 million developers.",
+            "image": "/images/logos/github.png",
+            "link": "https://github.com/",
+            "category": [
+                "Code"
+            ]
+        },
+        {
+            "id": "codepen",
+            "name": "Codepen",
+            "shortDescription": "The best place to build, test, and discover front-end code.",
+            "image": "/images/logos/codepen.ico",
+            "link": "https://codepen.io/",
+            "category": [
+                "Code"
+            ]
+        },
+        {
+            "id": "jsfiddle",
+            "name": "JSfiddle",
+            "shortDescription": "Front-end code playground.",
+            "image": "/images/logos/jsfiddle.png",
+            "link": "https://jsfiddle.net/",
+            "category": [
+                "Code"
+            ]
+        },
+        {
+            "id": "codacy",
+            "name": "Codacy",
+            "shortDescription": "Automatically identify issues through static code review analysis.",
+            "image": "/images/logos/codacy.png",
+            "link": "https://www.codacy.com/",
+            "category": [
+                "Code"
+            ]
+        },
+        {
+            "id": "redirectpizza",
+            "name": "Redirect Pizza",
+            "shortDescription": "Free redirect service with HTTPS support.",
+            "image": "/images/logos/redirectpizza.png",
+            "link": "https://redirect.pizza/",
+            "category": [
+                "Code"
+            ]
+        },
+        {
+            "id": "trendspottr",
+            "name": "TrendSpottr",
+            "shortDescription": "Predictive market & trend intelligence.",
+            "image": "/images/logos/trendspottr.jpeg",
+            "link": "http://trendspottr.com/",
+            "category": [
+                "Research"
+            ]
+        },
+        {
+            "id": "https://www.typeform.com/",
+            "name": "Typeform",
+            "shortDescription": "Beutiful forms and surveys. A friendly experience that invites more answers.",
+            "image": "/images/logos/typeform.png",
+            "link": "https://www.typeform.com/",
+            "category": [
+                "Research"
+            ]
+        },
+        {
+            "id": "kampsite",
+            "name": "Kampsite",
+            "shortDescription": "Get feedback from your users and start building a better version of your product.",
+            "image": "/images/logos/kampsite.png",
+            "link": "https://www.kampsite.co/",
+            "category": [
+                "Research"
+            ]
+        },
+        {
+            "id": "zapier",
+            "name": "Zapier",
+            "shortDescription": "Easy automation for busy people.",
+            "image": "/images/logos/zapier.ico",
+            "link": "https://zapier.com/",
+            "category": [
+                "Automation"
+            ]
+        },
+        {
+            "id": "automate",
+            "name": "Automate",
+            "shortDescription": "Automate marketing, sales and business processes.",
+            "image": "/images/logos/automate.png",
+            "link": "https://automate.io/",
+            "category": [
+                "Automation"
+            ]
+        },
+        {
+            "id": "slack",
+            "name": "Slack",
+            "shortDescription": "Slack replaces email inside your company.",
+            "image": "/images/logos/slack.png",
+            "link": "https://slack.com/",
+            "category": [
+                "Communication"
+            ]
+        },
+        {
+            "id": "wetransfer",
+            "name": "We Transfer",
+            "shortDescription": "Simple file sharing.",
+            "image": "/images/logos/wetransfer.png",
+            "link": "https://wetransfer.com/",
+            "category": [
+                "Communication"
+            ]
+        },
+        {
+            "id": "convertio",
+            "name": "Convertio",
+            "shortDescription": "Convert your files to any format.",
+            "image": "/images/logos/convertio.png",
+            "link": "https://convertio.co/",
+            "category": [
+                "File manipulation"
+            ]
+        }
+        
+    ]
+}
