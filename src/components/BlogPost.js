@@ -110,14 +110,14 @@ console.log('more posts', morePosts)
 
     <section id="read-more">
       <ul className="blog-list wrapper">
-        <header className="bigger center">Read more from the blog</header>
+        <header className="large center">Read more from the blog</header>
         {
           morePosts.length ? 
           morePosts.map(post => {
             console.log('otherpost', post)
             return <BlogTile title={post.title} shortDescription={post.shortDescription}
             dateUpdated={post.updatedAt}
-            slug={post.slug} thumbnail={post.thumbnail}/>;
+            slug={post.slug} thumbnail={post.thumbnail.fields.file}/>;
           }) : 
           <p>No posts found.</p>
         }

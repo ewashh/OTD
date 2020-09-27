@@ -1,7 +1,6 @@
 import React from 'react';
 import { useFetch } from "./../hooks";
 import { HashLink } from 'react-router-hash-link';
-import Animation from './Animation';
 
 const slug = (text) => text.replace(' ', '-').toLowerCase();
 
@@ -21,7 +20,7 @@ function HomeHeader(){
                 )) 
               )}
             </ul>
-            <a href="/directory" className="btn big red">Browse directory</a>
+            <a href="/directory" className="btn big">Browse directory</a>
             {/* 
             <img id="cursor-default" src="../images/icons/cursor-default.svg" />
             <img id="cursor-pointer" src="../images/icons/cursor-pointer.svg" />

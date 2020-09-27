@@ -9,6 +9,7 @@ function SubmitATool() {
                 <h1>Submit a tool</h1>
                 <p>If you know a great tool that we don't talk about yet, drop us a message on</p>
                 <a href="mailto:hi@onlinetooldirectory.com" className="link">hi@onlinetooldirectory.com</a>
+                <br/><br/><br/>
               </>
             </Header>
     )

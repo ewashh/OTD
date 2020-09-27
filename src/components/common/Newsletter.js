@@ -11,8 +11,8 @@ function Newsletter(props){
             <div className="wrapper center">
                 <img src="/../images/mail.png" />
                 <div>
-                <header className="bigger">Be the first to know</header>
-                <p className="smaller">Sign up for latest tools and guides sent to your inbox.</p>
+                <header className="large">Be the first to know</header>
+                <p>Sign up for latest tools and guides sent to your inbox.</p>
                 <form id="email_signup" className="klaviyo_gdpr_embed_Y8jB9i" action="//manage.kmail-lists.com/subscriptions/subscribe" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" method="GET" target="_blank" noValidate="noValidate">
                     <input type="hidden" name="g" value="Y8jB9i" />
                     <div className="input-group">

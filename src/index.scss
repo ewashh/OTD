@@ -6,24 +6,27 @@
           url('fonts/Porpora-Regular.woff') format('woff');
 }
 
-$black: #140C40;
-$blue: #4760FF; 
+$yellow: #F1D693;
+$dark-blue: invert($yellow);
+$blue: #1F50D6; 
 $white: #fff;
-$light: desaturate(lighten($blue, 32%), 20);
-$light: rgba($black, 0.075);
-$yellow: #ffc100;
-$light-yellow: #F4D06F;
+$black: #030712;
+$base-font-color: rgba($black, 0.85);
+$light: #D8E4FF;
+$darken: rgba($black, 0.04);
+$double-darken: rgba($black, 0.08);
 
-$green: #3bb273;
-$red: #D83F31;
+
+$green: #00A878;
+$red: #E63746;
+$pink: #EFBCD5;
+$dark-green: invert($pink);
 
 $primary-color: $blue;
 $on-primary-color: $white;
 
 $spacing: 100vw / 16;
 $spacing-mobile: $spacing / 2;
-
-$base-font-color: rgba(desaturate($black, 30), 0.8);
 
 //mobile font sizes
 $base-font-size: 4vmin;
@@ -36,7 +39,7 @@ $font-size-larger: 8vmin;
 $desktop-base-font-size: 19px;
 $desktop-font-size-smaller: $desktop-base-font-size * 0.85;
 $desktop-font-size-large: $desktop-base-font-size * 2.25;
-$desktop-font-size-larger: $desktop-base-font-size * 3;
+$desktop-font-size-larger: $desktop-base-font-size * 3.5;
 $desktop-font-size-bigger: $desktop-base-font-size * 1.35;
 $font-size-tiny: $desktop-base-font-size * 0.7;
 
@@ -233,19 +236,13 @@ input:focus {
 
 #cookies {
     padding: 0.5em;
-    background-color: darken($black, 3%);
+    background-color: $black;
     color: $white;
     display: flex;
     align-items: center;
     justify-content: center;
 
     .cross {
-        
-
-        @media #{$mobile} {
-            
-        }
-
         @media #{$desktop} {
             font-size: 0.8em;
             position: relative;
@@ -255,7 +252,7 @@ input:focus {
 
     a {
         display: inline;
-        color: $light-yellow;
+        color: $yellow;
         text-decoration: underline;
 
         &:hover {
@@ -267,7 +264,7 @@ input:focus {
 
 a {
     text-decoration: none;
-    color: $black;
+    color: $base-font-color;
     transition: all 0.4s ease-in-out;
 }
 
@@ -283,7 +280,7 @@ input {
 
 input[type=text], input[type=email] {
     padding: 0.75em 1.5em;
-    border: none;
+    border: 2px solid $black;
     border-radius: $border-radius;
 
     @media #{$mobile} {
@@ -322,8 +319,6 @@ input[type=checkbox] {
                 background: $primary-color;
             }
         }
-
-
     }
 }
 
@@ -435,7 +430,7 @@ img, video {
     }
 
     &:hover {
-        background: darken($primary-color, 12%);
+        background: $red;
         color: $white;
         cursor: pointer;
     }
@@ -458,17 +453,23 @@ img, video {
     display: inline-block;
     border-radius: 1.5em;
     padding: 0.35em 1em;
-    border: 0.15em solid rgba($blue, 0.5);
     margin-bottom: 1em;
     margin-right: 0.5em;
     transition: all 0.4s ease-in-out;
-    background-color: transparent;
+    background-color: rgba($light, 0.5);
     @extend .smaller;
 
+    a {
+        color: $black;
+    }
+
     &:hover {
-        background-color: rgba($blue, 0.2);
         cursor: pointer;
-        border-color: rgba($blue, 0.85);
+        background-color: $light;
+
+        a {
+            color: $blue;
+        }
     }
 
     &.active {
@@ -483,8 +484,8 @@ img, video {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: $light;
-    color: darken($light, 40%);
+    background: $darken;
+    color: darken($darken, 40%);
     border: 1px solid darken($light, 20%);
     font-weight: normal;
 }
@@ -495,7 +496,7 @@ h1, .h1 {
 }
 
 #top-nav {
-    border-bottom: 2px solid $light;
+    border-bottom: 2px solid $darken;
 
     nav {
         padding: 0.5em 0;
@@ -552,16 +553,6 @@ h1, .h1 {
                     }
 
                     &#submit-a-tool {
-                        text-transform: none;
-                        color: $white;
-                        background-color: $blue;
-                        
-                        &:hover, &.active {
-                            background: $primary-color;
-                            border-color: $primary-color;
-                            color: $white;
-                        }
-
                         @media #{$mobile} {
                             font-size: 0;
                             border: none;
@@ -660,16 +651,11 @@ body > header {
         }
 
         #logo a {
-            color: $black !important;
-        }
-
-        #submit-a-tool {
-            background-color: $blue !important;
+            color: $base-font-color !important;
         }
 
         h1 {
             font-weight: $semi-bold;
-            color: $black;
             margin-left: 0.25rem;
 
             span {
@@ -769,15 +755,7 @@ body > header {
 
         .filter {
             margin: 0.35em;
-
-            &:hover {
-                background-color: rgba($blue, 0.1);
-            }
-
-            a {
-                color: $base-font-color;
-                font-weight: 500;
-            }
+            background-color: darken;
         }
 
         p {
@@ -801,6 +779,7 @@ body > header {
 body > footer {
     background: $white;
     @extend %thin;
+    color: $base-font-color;
 
     @media #{$mobile} {
         padding: $spacing 0 $spacing / 2 0;
@@ -921,9 +900,10 @@ ul.tool-list {
         align-items: center;
         justify-content: flex-start;
         border: 2px solid transparent;
+        transition: border 0.4s ease-in-out;
 
         &:hover {
-            border: 2px solid $light;
+            border: 2px solid $blue;
         }
 
         a {
@@ -1011,23 +991,16 @@ ul.blog-list {
     @extend .tool-list;
     align-items: flex-start;
 
-    @media #{$mobile} {
         #read-more & {
             grid-template-columns: 1fr !important;
         }
-    }
 
     @media #{$desktop} {
         grid-template-columns: repeat( auto-fit, minmax(#{$spacing * 3}, 1fr) ) !important;
         grid-template-columns: 1fr 1fr 1fr !important;
+
         #read-more & {
             grid-template-columns: 1fr 1fr !important;
-        }
-    }
-
-    #read-more & {
-        img {
-            display: none;
         }
     }
 
@@ -1043,9 +1016,13 @@ ul.blog-list {
         text-align: left;
         box-shadow: unset;
         align-items: flex-start;
+        flex-direction: row;
+        background: $white;
+        border-radius: $border-radius;
 
         img {
             margin-bottom: 1rem;
+            background-color: $black;
         }
 
         a {
@@ -1123,10 +1100,6 @@ ul.blog-list {
     }
 
     li {
-        @media #{$mobile} {
-            border-top: 1px solid $light;
-            border-bottom: 1px solid $light;
-        }
 
         a {
             @extend .base;
@@ -1189,7 +1162,7 @@ ul.tool-list {
     }
 
     #tools {
-        background-color: $light;
+        background-color: $darken;
         border-radius: $border-radius;
 
         header {
@@ -1285,12 +1258,8 @@ ul.tool-list {
             flex-direction: column;
 
             & > span {
-                color: $base-font-color;
+                color: $black;
                 text-align: center;
-
-                &.h1 {
-                    color: $black;
-                }
             }
         }
 
@@ -1344,10 +1313,9 @@ ul.tool-list {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: $spacing / 2;
+    background: $darken;
 
     .wrapper {
-        background: $light-yellow;
         border-radius: $border-radius;
         padding: $spacing / 2;
 
@@ -1361,11 +1329,21 @@ ul.tool-list {
 	
 	header {
         font-weight: $semi-bold;
+        color: $black;
+    }
+
+    p, small {
+        color: $base-font-color
+    }
+
+    img {
+        background-color: $darken;
+        margin: 0 auto;
     }
 
     .btn {
         &:hover {
-            background: lighten($primary-color, 3%);
+            background: $black;
         }
     }
 
@@ -1413,7 +1391,12 @@ ul.tool-list {
 }
 
 header.post {
-    background-color: $light;
+    background-color: $darken;
+    color: $black;
+
+    #top-nav {
+        background-color: $white;
+    }
     
     .wrapper:not(#top-nav) {
         max-width: 1200px;
@@ -1422,6 +1405,7 @@ header.post {
             display: grid;
             grid-gap: $spacing;
             align-items: center;
+            padding: $spacing / 2 0;
 
             @media #{$desktop} {
                 grid-template-columns: 1fr 1fr;
@@ -1432,13 +1416,14 @@ header.post {
             }
 
             h1 {
-                @extend .large;
+                @extend .larger;
                 margin-top: 0;
             }
 
             h2 {
                 @extend .base;
                 font-weight: normal;
+                color: $base-font-color;
             }
 
             img {
@@ -1493,7 +1478,7 @@ main.post {
         img, video {
             margin: 0 auto;
             display: flex;
-            border: 2px solid $light;
+            border: 2px solid $darken;
         }
     }
 
@@ -1524,10 +1509,22 @@ blockquote {
 }
 
 #read-more {
-    background-color: $light;
+    background-color: $black;
+    color: $white;
+    padding: 1rem;
+
+    ul {
+        margin-bottom: 0;
+    }
 
     header {
         font-weight: $semi-bold;
+    }
+
+    img {
+        width: 5rem;
+        height: 5rem;
+        display: none;
     }
 
     @media #{$mobile} {
@@ -1536,171 +1533,5 @@ blockquote {
 
     @media #{$desktop} {
         padding: $spacing * 0.5 0 ;
-    }
-}
-
-#animation {
-    @extend %tile;
-    margin: $spacing auto;
-    background-color: $light;
-    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.8);
-
-    & > * {
-        padding: 0.5rem;
-    }
-
-    header {
-        background-color: mix($black, $blue, 85%);
-        border-radius: $border-radius $border-radius 0 0;
-        position: relative;
-        top: -0.1em;
-        display: flex;
-        justify-content: flex-end;
-        padding: 1rem;
-
-        .fas {
-            border-radius: 50%;
-            height: 1.3rem;
-            width: 1.3rem;
-            font-size: 0.7em;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-left: 0.4rem;
-        }
-
-        .fa-expand-alt {
-            background-color: $green;
-            color: rgba($black, 0.8);
-        }
-
-        .fa-window-minimize {
-            background-color: $yellow;
-            color: rgba($black, 0.8);
-            font-size: 0.5em;
-        }
-
-        .fa-times {
-            background-color: $red;
-            color: rgba($black, 0.8);
-        }
-    }
-
-    ul {
-        margin: 0 !important;
-        width: 18vw;
-
-        @keyframes li-first {
-            0% {
-                opacity: 0;
-            }
-            5% {
-                background-color: $white;
-                opacity: 1;
-                left: 0;
-            }
-            10% {
-                background-color: rgba($green, 0.8);
-            }
-            33% {
-                left: 30vw;
-                opacity: 0;
-            }
-            100% {
-                opacity: 0;
-            }
-        }
-
-        @keyframes li-second {
-            0% {
-                opacity: 0;
-            }
-            5% {
-                background-color: $white;
-                opacity: 1;
-                left: 0;
-            }
-            33% {
-                background-color: $white;
-                opacity: 1;
-                left: 0;
-            }
-            43% {
-                background-color: rgba($green, 0.8);
-            }
-            66% {
-                left: 30vw;
-                opacity: 0;
-            }
-            100% {
-                opacity: 0;
-            }
-        }
-
-        @keyframes li-third {
-            0% {
-                opacity: 0;
-            }
-            5% {
-                background-color: $white;
-                opacity: 1;
-                left: 0;
-            }
-            66% {
-                background-color: $white;
-                opacity: 1;
-                left: 0;
-            }
-            76% {
-                background-color: rgba($green, 0.8);
-            }
-            99% {
-                left: 30vw;
-                opacity: 0;
-            }
-            100% {
-                opacity: 0;
-            }
-        }
-
-        li {
-            @extend %tile;
-            padding: 1.25em;
-            font-size: 0.8rem;
-            margin: 0.5rem;
-            display: flex;
-            align-items: center;
-            position: relative;
-
-            &:nth-of-type(1){
-                animation: li-first 5s infinite;
-            }
-
-            &:nth-of-type(2){
-                animation: li-second 5s infinite;
-            }
-
-            &:nth-of-type(3){
-                animation: li-third 5s infinite;
-            }
-
-
-            &::before {
-                content: '';
-                display: inline-block;
-                width: 1em;
-                height: 1em;
-                border: 2px solid rgba($blue, 0.75);
-                border-radius: 0.3em;
-                margin-right: 0.75em;
-            }
-
-            span {
-                display: inline-block;
-                background-color: rgba($black, 0.15);
-                height: 1.25em;
-                width: 100%;
-            }
-        }
     }
 }
