@@ -1472,7 +1472,11 @@ main.post {
     
         a {
             color: $primary-color;
-            border-bottom: 1px solid $primary-color;
+            border-bottom: 1px dashed $primary-color;
+
+            &:hover {
+                border-bottom: 1px solid $primary-color;
+            }
         }
 
         img, video {

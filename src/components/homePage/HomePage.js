@@ -95,7 +95,7 @@ function HomePage() {
         <section id="why">
             <div className="wrapper">
               <header>
-                <span className="caps min">Plenty reasons why</span>
+                <span className="caps min">Plenty of reasons why</span>
                 <span className="h1">Get it done online</span>
               </header>
                 <ul>
