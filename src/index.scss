@@ -283,6 +283,10 @@ input[type=text], input[type=email] {
     border: 2px solid $black;
     border-radius: $border-radius;
 
+    &:focus-within {
+        border-color: $blue;
+    }
+
     @media #{$mobile} {
         font-size: $base-font-size;
     }
@@ -1240,7 +1244,7 @@ ul.tool-list {
     color: #1B1F3B;
 
     @media #{$mobile} {
-        padding: $spacing 0 0 0;
+        padding: $spacing 0;
     }
 
     @media #{$desktop} {
@@ -1317,9 +1321,13 @@ ul.tool-list {
 
     .wrapper {
         border-radius: $border-radius;
-        padding: $spacing / 2;
+
+        @media #{$mobile} {
+            padding: $spacing;
+        }
 
         @media #{$desktop} {
+            padding: $spacing / 2;
             display: grid;
             grid-template-columns: 1fr 1fr;
             align-items: center;
@@ -1330,6 +1338,10 @@ ul.tool-list {
 	header {
         font-weight: $semi-bold;
         color: $black;
+
+        @media #{$mobile} {
+            font-size: $font-size-bigger;
+        }
     }
 
     p, small {
@@ -1466,6 +1478,7 @@ main.post {
 
                 &:hover {
                     color: $primary-color;
+                    border-bottom: none;
                 }
             }
         }
@@ -1515,7 +1528,7 @@ blockquote {
 #read-more {
     background-color: $black;
     color: $white;
-    padding: 1rem;
+    padding: $spacing;
 
     ul {
         margin-bottom: 0;
@@ -1523,6 +1536,11 @@ blockquote {
 
     header {
         font-weight: $semi-bold;
+
+        @media #{$mobile} {
+            font-size: $font-size-bigger;
+            margin-top: 0;
+        }
     }
 
     img {
