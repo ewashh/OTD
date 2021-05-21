@@ -11,6 +11,7 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 import Newsletter from './components/common/Newsletter';
 import Footer from './components/common/Footer';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import ToolPage from './components/ToolPage';
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
           <Route path="/contact" component={Contact} />
           <Route path="/cookie-policy" component={CookiePolicy} />
           <Route path="/privacy-policy" component={PrivacyPolicy} />
+          <Route path="/tool" component={ToolPage} />
           <Route component={PageNotFound} />
         </Switch>
         <Newsletter newsletter={newsletter} onChange={handleChange} />

@@ -35,8 +35,7 @@ function Directory() {
 
   return (
       <>
-        <Header>
-            <h1>Directory</h1>
+        <Header pageTemplate="directory">
         </Header>
         <main id="scroll-container" className="wrapper-desktop">
           <aside id="categories-names" className="wrapper-mobile">
@@ -51,7 +50,8 @@ function Directory() {
               )}
               </ul>
           </aside>
-          <section id="categories" className="wrapper-mobile">   
+          <section id="categories" className="wrapper-mobile">
+          <h1>Directory</h1>
             {loading ? (
               <small>Loading...</small>
               ) : (
@@ -70,13 +70,14 @@ function Directory() {
                 bottomOffset="50%"
                 >
                   <article className="category" id={slug(category)}>
-                    <ul className="tool-list">
+                    <ul className="tool-list-items">
                       <header>
                         <h1>{category}</h1>
                       </header>{
                       data.tools.filter((tool) => tool.category.includes(category))
                       .map((tool, category) => (
                         <ToolTile
+                        type="list"
                         {...tool}
                         />
                       ))}

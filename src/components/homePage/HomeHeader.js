@@ -21,11 +21,6 @@ function HomeHeader(){
               )}
             </ul>
             <a href="/directory" className="btn big">Browse directory</a>
-            {/* 
-            <img id="cursor-default" src="../images/icons/cursor-default.svg" />
-            <img id="cursor-pointer" src="../images/icons/cursor-pointer.svg" />
-            <img id="grid" src="../images/grid.svg" />
-            <img id="dots" src="../images/dots.svg" /> */}
         </>
     )
 }

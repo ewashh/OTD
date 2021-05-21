@@ -43,7 +43,22 @@ function HomePage() {
     return (
         <>
         <Header pageTemplate="home"/>
-        <section id="whats-new">       
+        <section id="whats-new">
+        <div id="tools" className="wrapper">
+            <header>
+              <span className="bigger">Recently added tools</span>
+              <a className="btn min" href="/directory/">See all tools</a>
+            </header>
+            <ul className="tool-list">
+            {loading ? (
+              <small>Loading...</small>
+            ) : (
+              data.tools.slice(-6).reverse().map((tool) => (              
+                <ToolTile name={tool.name} link={tool.link} image={tool.image} />   
+              ))
+            )}
+            </ul>
+          </div>    
           <ul className="blog-list wrapper">
             <header className="caps desktop-hidden">Latest posts</header>
             {
@@ -76,21 +91,6 @@ function HomePage() {
               </ul>
             </li>
           </ul>
-          <div id="tools" className="wrapper">
-            <header>
-              <span className="bigger">Recently added tools</span>
-              <a className="btn min" href="/directory/">See all tools</a>
-            </header>
-            <ul className="tool-list">
-            {loading ? (
-              <small>Loading...</small>
-            ) : (
-              data.tools.slice(-6).reverse().map((tool) => (              
-                <ToolTile name={tool.name} link={tool.link} image={tool.image} />   
-              ))
-            )}
-            </ul>
-          </div>
         </section>
         <section id="why">
             <div className="wrapper">

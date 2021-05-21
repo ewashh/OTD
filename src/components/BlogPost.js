@@ -4,7 +4,7 @@ import { useFetch } from "./hooks";
 import BlogTile from './common/BlogTile';
 import { createClient } from 'contentful';
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
-import { BLOCKS } from '@contentful/rich-text-types';
+import { BLOCKS, INLINES } from '@contentful/rich-text-types';
 import { format } from 'timeago.js';
 
 
@@ -68,14 +68,27 @@ function BlogPost({match}) {
 const options = {
   renderNode: {
     [BLOCKS.EMBEDDED_ASSET]: (asset) => {
-      console.log(asset)
       if (asset.data.target.fields.file.contentType === 'video/mp4') {
         return `<video src="${asset.data.target.fields.file.url}" alt="${asset.data.target.fields.title}" autoplay loop mute ></video>`
       }
       return `<img src="${asset.data.target.fields.file.url}" alt="${asset.data.target.fields.title}" />` 
+    },
+    [INLINES.HYPERLINK]: (link) => {
+      console.log(link)
+      let url = link.data.uri;
+      let domainName = "onlinetool.directory/";
+      if (!(url.includes(domainName))) {
+        if (!(url.includes("?ref=onlinetool.directory"))) {
+          return `<a href="${url}?ref=onlinetool.directory" target="_blank" class="external">${documentToHtmlString(link)}</a>`
+        }
+        return `<a href="${url}" target="_blank" class="external">${documentToHtmlString(link)}</a>`
+      }
+      return `<a href="${url}">${documentToHtmlString(link)}</a>`
     }
   },
 }
+
+
 
 const morePosts = posts.other.slice(-2)
 const currentPost = posts.current

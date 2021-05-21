@@ -9,6 +9,7 @@ function PageNotFound() {
             <h1>Ooops...</h1>
             <p>We can't seem to find the page you're looking for.</p>
             <Link to="/" className="btn big">Start fresh</Link>
+            <br/><br/><br/>
             </>
         </Header>
     )

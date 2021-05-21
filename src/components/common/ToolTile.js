@@ -1,13 +1,13 @@
 import React from 'react';
 
-function ToolTile(props){
+function ToolTile({type, link, image, name, shortDescription}){
     return (
-        <li className="tool-tile">
-            <a href={`${props.link}?ref=onlinetool.directory`} target="_blank">
+        <li className={type == "list" ? "tool-list-item" : "tool-tile"}>
+            <a href={`${link}?ref=onlinetool.directory`} target="_blank">
                 <div>
-                    <div className="img-wrapper" style={{backgroundImage: `url(${props.image || "/images/logos/default.svg"})`}}></div>
-                    <h2>{props.name}</h2>
-                    <p>{props.shortDescription}</p>
+                    <div className="img-wrapper" style={{backgroundImage: `url(${image || "/images/logos/default.svg"})`}}></div>
+                    <h2>{name}</h2>
+                    <p>{shortDescription}</p>
                 </div>
             </a>
         </li>
