@@ -90,6 +90,11 @@ input:focus {
   text-align: center;
 }
 
+.grid-column {
+  display: grid;
+  grid-gap: 1.5625vw;
+}
+
 .large {
   line-height: 1.2em;
   font-family: 'Apfel', sans-serif;
