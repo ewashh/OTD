@@ -1,0 +1,33 @@
+@import './../../../variables';
+
+.component-input {
+  display: grid;
+  grid-gap: .5rem;
+  text-align: left;
+
+  label {
+    font-weight: normal;
+    @extend .smaller;
+  }
+
+  input[type=text], input[type=email], textarea {
+    padding: 0.75em;
+    border: 2px solid $black;
+    min-width: 50vw;
+    transition: all 0.4s ease-in-out;
+    border-radius: $border-radius;
+
+    &:focus-within {
+      border-color: $blue;
+    }
+
+    @media #{$mobile} {
+      font-size: $base-font-size;
+    }
+
+    @media #{$desktop} {
+      font-size: $desktop-base-font-size;
+    }
+  }
+  
+}

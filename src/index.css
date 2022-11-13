@@ -25,6 +25,76 @@ ul.tool-list .tool-tile, ul.blog-list .tool-tile, ul.tool-list .tool-tile:not(#m
   border-radius: 0.15rem;
 }
 
+.large {
+  line-height: 1.2em;
+  font-family: 'Apfel', sans-serif;
+}
+
+@media (max-width: 1023px) {
+  .large {
+    font-size: 9vmin;
+  }
+}
+
+@media (min-width: 1024px) {
+  .large {
+    font-size: 42.75px;
+  }
+}
+
+.larger, h1, .h1, body > header:not(.post) h1, header.post .wrapper:not(#top-nav) > div h1 {
+  font-family: 'Apfel', sans-serif;
+}
+
+@media (max-width: 1023px) {
+  .larger, h1, .h1, body > header:not(.post) h1, header.post .wrapper:not(#top-nav) > div h1 {
+    font-size: 8vmin;
+  }
+}
+
+@media (min-width: 1024px) {
+  .larger, h1, .h1, body > header:not(.post) h1, header.post .wrapper:not(#top-nav) > div h1 {
+    font-size: 66.5px;
+  }
+}
+
+.bigger, h2, .category h1 {
+  line-height: 1.4em;
+}
+
+@media (max-width: 1023px) {
+  .bigger, h2, .category h1 {
+    font-size: 5.25vmin;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bigger, h2, .category h1 {
+    font-size: 25.65px;
+  }
+}
+
+.smaller, label, .filter, ul.tool-list .tool-tile h2, ul.blog-list .tool-tile h2, ul.tool-list .tool-tile p, ul.blog-list .tool-tile p, #categories-names header, #categories-names li a, blockquote::before, #tool-page aside header, .tool-list-items .tool-list-item h2 + p {
+  line-height: 1.4;
+}
+
+@media (max-width: 1023px) {
+  .smaller, label, .filter, ul.tool-list .tool-tile h2, ul.blog-list .tool-tile h2, ul.tool-list .tool-tile p, ul.blog-list .tool-tile p, #categories-names header, #categories-names li a, blockquote::before, #tool-page aside header, .tool-list-items .tool-list-item h2 + p {
+    font-size: 4vmin;
+  }
+}
+
+@media (min-width: 1024px) {
+  .smaller, label, .filter, ul.tool-list .tool-tile h2, ul.blog-list .tool-tile h2, ul.tool-list .tool-tile p, ul.blog-list .tool-tile p, #categories-names header, #categories-names li a, blockquote::before, #tool-page aside header, .tool-list-items .tool-list-item h2 + p {
+    font-size: 16.15px;
+  }
+}
+
+.caps, ul.tool-list .tool-tile h2, ul.blog-list .tool-tile h2, #categories-names header, #tool-page aside header, #tool-page aside .tool-tile h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
 .icon, main.post article .update time::before {
   display: inline-block;
   position: relative;
@@ -90,68 +160,20 @@ input:focus {
   text-align: center;
 }
 
-.large {
-  line-height: 1.2em;
-  font-family: 'Apfel', sans-serif;
+.grid-column {
+  display: grid;
+  grid-gap: 6.25vw;
 }
 
 @media (max-width: 1023px) {
-  .large {
-    font-size: 9vmin;
+  .grid-column {
+    width: 100%;
   }
 }
 
 @media (min-width: 1024px) {
-  .large {
-    font-size: 42.75px;
-  }
-}
-
-.larger, h1, .h1, body > header:not(.post) h1, header.post .wrapper:not(#top-nav) > div h1 {
-  font-family: 'Apfel', sans-serif;
-}
-
-@media (max-width: 1023px) {
-  .larger, h1, .h1, body > header:not(.post) h1, header.post .wrapper:not(#top-nav) > div h1 {
-    font-size: 8vmin;
-  }
-}
-
-@media (min-width: 1024px) {
-  .larger, h1, .h1, body > header:not(.post) h1, header.post .wrapper:not(#top-nav) > div h1 {
-    font-size: 66.5px;
-  }
-}
-
-.bigger, h2, .category h1 {
-  line-height: 1.4em;
-}
-
-@media (max-width: 1023px) {
-  .bigger, h2, .category h1 {
-    font-size: 5.25vmin;
-  }
-}
-
-@media (min-width: 1024px) {
-  .bigger, h2, .category h1 {
-    font-size: 25.65px;
-  }
-}
-
-.smaller, label, .btn, .filter.active, .filter, ul.tool-list .tool-tile h2, ul.blog-list .tool-tile h2, ul.tool-list .tool-tile p, ul.blog-list .tool-tile p, #categories-names header, #categories-names li a, blockquote::before, #tool-page aside header, .tool-list-items .tool-list-item h2 + p {
-  line-height: 1.4;
-}
-
-@media (max-width: 1023px) {
-  .smaller, label, .btn, .filter.active, .filter, ul.tool-list .tool-tile h2, ul.blog-list .tool-tile h2, ul.tool-list .tool-tile p, ul.blog-list .tool-tile p, #categories-names header, #categories-names li a, blockquote::before, #tool-page aside header, .tool-list-items .tool-list-item h2 + p {
-    font-size: 4vmin;
-  }
-}
-
-@media (min-width: 1024px) {
-  .smaller, label, .btn, .filter.active, .filter, ul.tool-list .tool-tile h2, ul.blog-list .tool-tile h2, ul.tool-list .tool-tile p, ul.blog-list .tool-tile p, #categories-names header, #categories-names li a, blockquote::before, #tool-page aside header, .tool-list-items .tool-list-item h2 + p {
-    font-size: 16.15px;
+  .grid-column {
+    grid-gap: 1.5625vw;
   }
 }
 
@@ -250,38 +272,6 @@ label {
   font-weight: normal;
 }
 
-input {
-  transition: all 0.4s ease-in-out;
-}
-
-@media (min-width: 1024px) {
-  input {
-    min-width: 12.5em;
-  }
-}
-
-input[type=text], input[type=email] {
-  padding: 0.75em 1.5em;
-  border: 2px solid #030712;
-  border-radius: 0.15rem;
-}
-
-input[type=text]:focus-within, input[type=email]:focus-within {
-  border-color: #1F50D6;
-}
-
-@media (max-width: 1023px) {
-  input[type=text], input[type=email] {
-    font-size: 4vmin;
-  }
-}
-
-@media (min-width: 1024px) {
-  input[type=text], input[type=email] {
-    font-size: 19px;
-  }
-}
-
 input[type=checkbox] {
   display: none;
 }
@@ -365,87 +355,6 @@ ul li {
 img, video {
   max-width: 100%;
   border-radius: 0.15rem;
-}
-
-.btn, .filter.active {
-  background: #1F50D6;
-  color: #fff;
-  display: inline-block;
-  border-radius: 1.5em;
-  padding: 0.35em 1em;
-  border: none;
-  transition: all 0.4s ease-in-out;
-}
-
-.btn.big, .big.filter.active {
-  border-radius: 3em;
-  padding: 1em 3em;
-}
-
-@media (max-width: 1023px) {
-  .btn.big, .big.filter.active {
-    font-size: 4vmin;
-  }
-}
-
-@media (min-width: 1024px) {
-  .btn.big, .big.filter.active {
-    font-size: 19px;
-  }
-}
-
-.btn.min, .min.filter.active, #whats-new #tools .tool-list h2.filter.active, #whats-new #tools ul.blog-list h2.filter.active, #whats-new #tools .tool-list h2.btn, #whats-new #tools ul.blog-list h2.btn {
-  background: transparent;
-  padding: 0;
-  border-radius: 0;
-  color: #1F50D6;
-  border-bottom: 0.1em solid transparent;
-}
-
-@media (max-width: 1023px) {
-  .btn.min, .min.filter.active, #whats-new #tools .tool-list h2.filter.active, #whats-new #tools ul.blog-list h2.filter.active, #whats-new #tools .tool-list h2.btn, #whats-new #tools ul.blog-list h2.btn {
-    font-size: 4vmin;
-  }
-}
-
-@media (min-width: 1024px) {
-  .btn.min, .min.filter.active, #whats-new #tools .tool-list h2.filter.active, #whats-new #tools ul.blog-list h2.filter.active, #whats-new #tools .tool-list h2.btn, #whats-new #tools ul.blog-list h2.btn {
-    font-size: 16.15px;
-  }
-}
-
-.btn.min:hover, .min.filter.active:hover, #whats-new #tools .tool-list h2.filter.active:hover, #whats-new #tools ul.blog-list h2.filter.active:hover, #whats-new #tools .tool-list h2.btn:hover, #whats-new #tools ul.blog-list h2.btn:hover {
-  background-color: transparent;
-  border-bottom: 0.1em solid #1F50D6;
-  color: #1F50D6;
-}
-
-.btn.min.yellow, .min.yellow.filter.active, #whats-new #tools .tool-list h2.yellow.filter.active, #whats-new #tools ul.blog-list h2.yellow.filter.active, #whats-new #tools .tool-list h2.btn.yellow, #whats-new #tools ul.blog-list h2.btn.yellow {
-  color: #F1D693;
-}
-
-.btn.min.yellow:hover, .min.yellow.filter.active:hover, #whats-new #tools .tool-list h2.yellow.filter.active:hover, #whats-new #tools ul.blog-list h2.yellow.filter.active:hover, #whats-new #tools .tool-list h2.btn.yellow:hover, #whats-new #tools ul.blog-list h2.btn.yellow:hover {
-  border-bottom: 0.1em solid #F1D693;
-  color: #F1D693;
-}
-
-.btn:hover, .filter.active:hover {
-  background: #E63746;
-  color: #fff;
-  cursor: pointer;
-}
-
-.btn.red, .red.filter.active {
-  background-color: #E63746;
-}
-
-.btn.red:hover, .red.filter.active:hover {
-  background: #c71928;
-}
-
-.caps, .btn, .filter.active, ul.tool-list .tool-tile h2, ul.blog-list .tool-tile h2, #categories-names header, #tool-page aside header, #tool-page aside .tool-tile h2 {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
 }
 
 .filter {
@@ -665,7 +574,7 @@ body > header.home h1 span:nth-of-type(2) {
 }
 
 body > header.home .wrapper:not(#top-nav) {
-  align-items: baseline;
+  align-items: center;
   position: relative;
   text-align: center;
 }

@@ -1,77 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-
-@font-face {
-    font-family: 'Apfel';
-    src:  url('fonts/ApfelGrotezk-Regular.woff2') format('woff2'),
-          url('fonts/ApfelGrotezk-Regular.woff') format('woff');
-}
-
-$yellow: #F1D693;
-$dark-blue: invert($yellow);
-$blue: #1F50D6; 
-$white: #fff;
-$black: #030712;
-$base-font-color: rgba($black, 0.85);
-$light: #D8E4FF;
-$darken: rgba($black, 0.04);
-$double-darken: rgba($black, 0.08);
-
-
-$green: #00A878;
-$red: #E63746;
-$pink: #EFBCD5;
-$dark-green: invert($pink);
-
-$primary-color: $blue;
-$on-primary-color: $white;
-
-$spacing: 100vw / 16;
-$spacing-mobile: $spacing / 2;
-
-//mobile font sizes
-$base-font-size: 4vmin;
-$font-size-smaller: $base-font-size;
-$font-size-bigger: 5.25vmin;
-$font-size-large: $base-font-size * 2.25;
-$font-size-larger: 8vmin;
-
-//desktop font sizes
-$desktop-base-font-size: 19px;
-$desktop-font-size-smaller: $desktop-base-font-size * 0.85;
-$desktop-font-size-large: $desktop-base-font-size * 2.25;
-$desktop-font-size-larger: $desktop-base-font-size * 3.5;
-$desktop-font-size-bigger: $desktop-base-font-size * 1.35;
-$font-size-tiny: $desktop-base-font-size * 0.7;
-
-$thin: 400;
-$semi-bold: 600;
-$bold: 700;
-
-$mobile: "(max-width: 1023px)";
-$desktop: "(min-width: 1024px)";
-
-$border-radius: 0.15rem;
-
-%thin {
-    letter-spacing: 0.002em;
-    font-weight: $thin;
-  }
-
-%bold {
-  letter-spacing: -0.005em;
-  font-weight: $bold;
-}
-
-%semi-bold {
-    letter-spacing: -0.005em;
-    font-weight: $semi-bold;
-}
-
-%tile {
-    background-color: $white;
-    box-shadow: 0 0 2rem rgba(0,0,0,.1);
-    border-radius: $border-radius;
-}
+@import 'variables';
 
 .icon {
     display: inline-block;
@@ -136,54 +63,16 @@ input:focus {
     text-align: center;
 }
 
-.large {
-    line-height: 1.2em;
-    @extend %semi-bold;
-    font-family: 'Apfel', sans-serif;
+.grid-column {
+    display: grid;
+    grid-gap: $spacing;
 
     @media #{$mobile} {
-        font-size: $font-size-large;
+        width: 100%;
     }
 
     @media #{$desktop} {
-       font-size: $desktop-font-size-large;
-    }
-}
-
-.larger {
-    font-family: 'Apfel', sans-serif;
-
-    @media #{$mobile} {
-        font-size: $font-size-larger;
-    }
-
-    @media #{$desktop} {
-        font-size: $desktop-font-size-larger;
-    }
-}
-
-.bigger {
-    @extend %semi-bold;
-    line-height: 1.4em;
-
-    @media #{$mobile} {
-        font-size: $font-size-bigger;
-    }
-
-    @media #{$desktop} {
-        font-size: $desktop-font-size-bigger;
-    }
-}
-
-.smaller {
-    line-height: 1.4;
-
-    @media #{$mobile} {
-        font-size: $font-size-smaller;
-    }
-
-    @media #{$desktop} {
-        font-size: $desktop-font-size-smaller;
+        grid-gap: $spacing/4;
     }
 }
 
@@ -275,32 +164,6 @@ label {
     @extend .smaller;
 }
 
-input {
-  transition: all 0.4s ease-in-out;
-
-  @media #{$desktop} {
-    min-width: 12.5em;
-  }
-}
-
-input[type=text], input[type=email] {
-    padding: 0.75em 1.5em;
-    border: 2px solid $black;
-    border-radius: $border-radius;
-
-    &:focus-within {
-        border-color: $blue;
-    }
-
-    @media #{$mobile} {
-        font-size: $base-font-size;
-    }
-
-    @media #{$desktop} {
-        font-size: $desktop-base-font-size;
-    }
-}
-
 input[type=checkbox] {
     display: none;
 
@@ -381,81 +244,6 @@ ul {
 img, video {
     max-width: 100%;
     border-radius: $border-radius;
-}
-
-.btn {
-    @extend .smaller;
-    @extend .caps;
-    background: $primary-color;
-    color: $on-primary-color;
-    display: inline-block;
-    border-radius: 1.5em;
-    padding: 0.35em 1em;
-    border: none;
-    transition: all 0.4s ease-in-out;
-
-    &.big {
-        border-radius: 3em;
-        padding: 1em 3em;
-
-        @media #{$mobile} {
-            font-size: $base-font-size;
-        }
-    
-        @media #{$desktop} {
-            font-size: $desktop-base-font-size;
-        }
-    }
-
-    &.min {
-        background: transparent;
-        padding: 0;
-        border-radius: 0;
-        color: $blue;
-        border-bottom: 0.1em solid transparent;
-
-        @media #{$mobile} {
-            font-size: $font-size-smaller;
-        }
-    
-        @media #{$desktop} {
-            font-size: $desktop-font-size-smaller;
-        }
-
-        &:hover {
-            background-color: transparent;
-            border-bottom: 0.1em solid $blue;
-            color: $blue;
-        }
-
-        &.yellow {
-            color: $yellow;
-
-            &:hover {
-                border-bottom: 0.1em solid $yellow;
-                color: $yellow;
-            }
-        }
-    }
-
-    &:hover {
-        background: $red;
-        color: $white;
-        cursor: pointer;
-    }
-
-    &.red {
-        background-color: $red;
-
-        &:hover {
-            background: darken($red, 12%);
-        }
-    }
-}
-
-.caps {
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
 }
 
 .filter {
@@ -681,7 +469,7 @@ body > header {
         }
 
         .wrapper:not(#top-nav) {
-            align-items: baseline;
+            align-items: center;
             position: relative;
             text-align: center;
         }
