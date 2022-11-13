@@ -1,11 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import Input from './input/Input';
+import Button from './button/Button';
 
-function Newsletter(props){
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-  
-
+function Newsletter(){
     return (
         <section id="newsletter">
             <div className="wrapper center">
@@ -16,7 +14,7 @@ function Newsletter(props){
                 <form id="email_signup" className="klaviyo_gdpr_embed_Y8jB9i" action="//manage.kmail-lists.com/subscriptions/subscribe" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" method="GET" target="_blank" noValidate="noValidate">
                     <input type="hidden" name="g" value="Y8jB9i" />
                     <div className="input-group">
-                    <input className="" type="email" value={email} name="email" placeholder="Your best email"  onChange={e => setEmail(e.target.value)}/>
+                    <Input className="" type="email" name="email" placeholder="Your best email" />
                     </div>
                     <small>We value your <Link to="/privacy-policy">privacy</Link> and won't misuse your data.</small>
                     <div className="klaviyo_messages">
@@ -24,7 +22,7 @@ function Newsletter(props){
                         <small className="error_message"></small>
                     </div>
                     <div className="klaviyo_form_actions">
-                        <button type="submit" className="btn big red">Subscribe</button>
+                        <Button type="submit" text="Subscribe" color="red" size="big"></Button>
                     </div>
                 </form>
                 </div>

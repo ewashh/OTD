@@ -1,0 +1,71 @@
+@import './../../../variables';
+
+.component-button {
+  @extend .smaller;
+  @extend .caps;
+  background: $primary-color;
+  color: $on-primary-color;
+  display: inline-block;
+  border-radius: 1.5em;
+  padding: 0.35em 1em;
+  border: none;
+  transition: all 0.4s ease-in-out;
+
+  &.big {
+    border-radius: 3em;
+    padding: 1em 3em;
+
+    @media #{$mobile} {
+      font-size: $base-font-size;
+    }
+
+    @media #{$desktop} {
+      font-size: $desktop-base-font-size;
+    }
+  }
+
+  &.min {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    color: $blue;
+    border-bottom: 0.1em solid transparent;
+
+    @media #{$mobile} {
+      font-size: $font-size-smaller;
+    }
+
+    @media #{$desktop} {
+      font-size: $desktop-font-size-smaller;
+    }
+
+    &:hover {
+      background-color: transparent;
+      border-bottom: 0.1em solid $blue;
+      color: $blue;
+    }
+
+    &.yellow {
+      color: $yellow;
+
+      &:hover {
+          border-bottom: 0.1em solid $yellow;
+          color: $yellow;
+      }
+    }
+  }
+
+  &:hover {
+    background: $red;
+    color: $white;
+    cursor: pointer;
+  }
+
+  &.red {
+    background-color: $red;
+
+    &:hover {
+        background: darken($red, 12%);
+    }
+  }
+}

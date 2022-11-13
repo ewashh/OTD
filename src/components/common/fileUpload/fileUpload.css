@@ -58,52 +58,54 @@
   }
 }
 
-.smaller, .component-input label {
+.smaller, .component-file-upload .label {
   line-height: 1.4;
 }
 
 @media (max-width: 1023px) {
-  .smaller, .component-input label {
+  .smaller, .component-file-upload .label {
     font-size: 4vmin;
   }
 }
 
 @media (min-width: 1024px) {
-  .smaller, .component-input label {
+  .smaller, .component-file-upload .label {
     font-size: 16.15px;
   }
 }
 
-.component-input {
-  display: grid;
-  grid-gap: .5rem;
-  text-align: left;
+.caps {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
-.component-input label {
+.component-file-upload {
+  text-align: left;
+  display: grid;
+  grid-gap: .5rem;
+}
+
+.component-file-upload .label {
   font-weight: normal;
 }
 
-.component-input input[type=text], .component-input input[type=email], .component-input textarea {
-  padding: 0.75em;
-  border: 2px solid #030712;
-  min-width: 50vw;
-  transition: all 0.4s ease-in-out;
-  border-radius: 0.15rem;
+.component-file-upload input {
+  display: none;
 }
 
-.component-input input[type=text]:focus-within, .component-input input[type=email]:focus-within, .component-input textarea:focus-within {
-  border-color: #1F50D6;
+.component-file-upload label:hover {
+  cursor: pointer;
 }
 
-@media (max-width: 1023px) {
-  .component-input input[type=text], .component-input input[type=email], .component-input textarea {
-    font-size: 4vmin;
-  }
+.component-file-upload .file-upload-wrapper {
+  display: grid;
+  align-items: center;
+  justify-content: flex-start;
+  grid-gap: .5rem;
 }
 
 @media (min-width: 1024px) {
-  .component-input input[type=text], .component-input input[type=email], .component-input textarea {
-    font-size: 19px;
+  .component-file-upload .file-upload-wrapper {
+    grid-auto-flow: column;
   }
 }

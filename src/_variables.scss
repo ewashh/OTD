@@ -71,3 +71,59 @@ $border-radius: 0.15rem;
     box-shadow: 0 0 2rem rgba(0,0,0,.1);
     border-radius: $border-radius;
 }
+
+%large, .large {
+  line-height: 1.2em;
+  @extend %semi-bold;
+  font-family: 'Apfel', sans-serif;
+
+  @media #{$mobile} {
+      font-size: $font-size-large;
+  }
+
+  @media #{$desktop} {
+     font-size: $desktop-font-size-large;
+  }
+}
+
+%larger, .larger {
+  font-family: 'Apfel', sans-serif;
+
+  @media #{$mobile} {
+      font-size: $font-size-larger;
+  }
+
+  @media #{$desktop} {
+      font-size: $desktop-font-size-larger;
+  }
+}
+
+%bigger, .bigger {
+  @extend %semi-bold;
+  line-height: 1.4em;
+
+  @media #{$mobile} {
+      font-size: $font-size-bigger;
+  }
+
+  @media #{$desktop} {
+      font-size: $desktop-font-size-bigger;
+  }
+}
+
+%smaller, .smaller {
+  line-height: 1.4;
+
+  @media #{$mobile} {
+      font-size: $font-size-smaller;
+  }
+
+  @media #{$desktop} {
+      font-size: $desktop-font-size-smaller;
+  }
+}
+
+%caps, .caps {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}

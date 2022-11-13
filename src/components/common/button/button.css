@@ -58,52 +58,99 @@
   }
 }
 
-.smaller, .component-input label {
+.smaller, .component-button {
   line-height: 1.4;
 }
 
 @media (max-width: 1023px) {
-  .smaller, .component-input label {
+  .smaller, .component-button {
     font-size: 4vmin;
   }
 }
 
 @media (min-width: 1024px) {
-  .smaller, .component-input label {
+  .smaller, .component-button {
     font-size: 16.15px;
   }
 }
 
-.component-input {
-  display: grid;
-  grid-gap: .5rem;
-  text-align: left;
+.caps, .component-button {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
-.component-input label {
-  font-weight: normal;
-}
-
-.component-input input[type=text], .component-input input[type=email], .component-input textarea {
-  padding: 0.75em;
-  border: 2px solid #030712;
-  min-width: 50vw;
+.component-button {
+  background: #1F50D6;
+  color: #fff;
+  display: inline-block;
+  border-radius: 1.5em;
+  padding: 0.35em 1em;
+  border: none;
   transition: all 0.4s ease-in-out;
-  border-radius: 0.15rem;
 }
 
-.component-input input[type=text]:focus-within, .component-input input[type=email]:focus-within, .component-input textarea:focus-within {
-  border-color: #1F50D6;
+.component-button.big {
+  border-radius: 3em;
+  padding: 1em 3em;
 }
 
 @media (max-width: 1023px) {
-  .component-input input[type=text], .component-input input[type=email], .component-input textarea {
+  .component-button.big {
     font-size: 4vmin;
   }
 }
 
 @media (min-width: 1024px) {
-  .component-input input[type=text], .component-input input[type=email], .component-input textarea {
+  .component-button.big {
     font-size: 19px;
   }
+}
+
+.component-button.min {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  color: #1F50D6;
+  border-bottom: 0.1em solid transparent;
+}
+
+@media (max-width: 1023px) {
+  .component-button.min {
+    font-size: 4vmin;
+  }
+}
+
+@media (min-width: 1024px) {
+  .component-button.min {
+    font-size: 16.15px;
+  }
+}
+
+.component-button.min:hover {
+  background-color: transparent;
+  border-bottom: 0.1em solid #1F50D6;
+  color: #1F50D6;
+}
+
+.component-button.min.yellow {
+  color: #F1D693;
+}
+
+.component-button.min.yellow:hover {
+  border-bottom: 0.1em solid #F1D693;
+  color: #F1D693;
+}
+
+.component-button:hover {
+  background: #E63746;
+  color: #fff;
+  cursor: pointer;
+}
+
+.component-button.red {
+  background-color: #E63746;
+}
+
+.component-button.red:hover {
+  background: #c71928;
 }

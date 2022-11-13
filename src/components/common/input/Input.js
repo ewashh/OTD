@@ -5,7 +5,9 @@ import "./input.scss"
 export default function Input({ label,
                                 value,
                                 type,
-                                placeholder
+                                placeholder,
+                                name,
+                                required
                               }){
                                  
   const [inputValue, setInputValue] = React.useState(value ? value : '');
@@ -15,17 +17,21 @@ export default function Input({ label,
 
   return (
     <div className="component-input">
-      <label>{label}</label>
+      <label>{label}{required && '*'}</label>
       { type == "textarea" ? 
         <textarea
           value={inputValue}
+          name={name}
           onChange={handleInputChange}
           placeholder={placeholder}
+          rows="5"
+          required={required}
         />
         :
         <input
           type={type}
           value={inputValue}
+          name={name}
           onChange={handleInputChange}
           placeholder={placeholder}
         />
@@ -35,5 +41,5 @@ export default function Input({ label,
 }
 
 Input.propTypes = {
-  type: PropTypes.oneOf(['text', 'textarea', 'email'])
+  type: PropTypes.oneOf(['text', 'textarea', 'email', 'file'])
 };
