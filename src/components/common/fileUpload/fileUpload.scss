@@ -1,0 +1,33 @@
+@import './../../../variables';
+
+.component-file-upload {
+  text-align: left;
+  display: grid;
+  grid-gap: .5rem;
+
+  .label {
+    font-weight: normal;
+    @extend .smaller;
+  }
+
+  input {
+    display: none;
+  }
+
+  label {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .file-upload-wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    grid-gap: .5rem;
+
+    @media #{$desktop} {
+      grid-auto-flow: column;
+    }
+  }
+}
